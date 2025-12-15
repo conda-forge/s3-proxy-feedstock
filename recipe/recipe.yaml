@@ -1,6 +1,6 @@
 context:
   name: s3-proxy
-  version: "4.18.1"
+  version: "4.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -9,10 +9,10 @@ package:
 source:
   - target_directory: src
     url: https://github.com/oxyno-zeta/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: a82cbd0414502bf28e54c83b487afb9a2f5256573f141fa6cce9268b012ec702
+    sha256: ca28c9b94d2ccc92f22ebf65b8da9ad0f0131f0fe9a4d09745075c01aae7fab5
 
 build:
-  number: 1
+  number: 0
   script:
     - if: win
       then:
