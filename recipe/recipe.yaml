@@ -11,7 +11,7 @@ source:
     url: https://github.com/oxyno-zeta/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
     sha256: ca28c9b94d2ccc92f22ebf65b8da9ad0f0131f0fe9a4d09745075c01aae7fab5
   - url: https://raw.githubusercontent.com/jmespath/go-jmespath/refs/heads/master/LICENSE
-    sha256: ca28c9b94d2ccc92f22ebf65b8da9ad0f0131f0fe9a4d09745075c01aae7fab5
+    sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
     file_name: LICENSE-go-jmespath
 build:
   number: 0
