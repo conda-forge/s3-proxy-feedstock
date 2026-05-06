@@ -1,6 +1,6 @@
 context:
   name: s3-proxy
-  version: "5.0.0"
+  version: "5.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   - target_directory: src
     url: https://github.com/oxyno-zeta/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: e50ce362f3a6de4e5b23756befe8d333b43dd3ba562323f5b6fe6ee5bb6ec3ce
+    sha256: c17b61e21655af02a124f45982d6c9bda4c45dd62d0d0f9e0067fc17012b6273
   - url: https://raw.githubusercontent.com/jmespath/go-jmespath/refs/heads/master/LICENSE
     sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
     file_name: LICENSE-go-jmespath
