@@ -40,13 +40,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/s3-proxy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24916&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/s3-proxy-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -72,31 +65,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `s3-proxy` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install s3-proxy
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install s3-proxy
 ```
 
-It is possible to list all of the versions of `s3-proxy` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add s3-proxy
+# for installing globally
+pixi global install s3-proxy
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `s3-proxy` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search s3-proxy --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search s3-proxy --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search s3-proxy --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -108,6 +143,8 @@ mamba repoquery whoneeds s3-proxy --channel conda-forge
 # List dependencies of `s3-proxy`:
 mamba repoquery depends s3-proxy --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
